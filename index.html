@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML Formulario de Curso</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>IDCurso:</label><label class="validation-error hide" id="IDCursoValidationError">This field is required.</label>
+                        <input type="text" name="IDCurso" id="IDCurso">
+                    </div>
+                    <div>
+                        <label>Curso:</label>
+                        <input type="text" name="Curso" id="Curso">
+                    </div>
+                    <div>
+                        <label>Descricao:</label>
+                        <input type="text" name="Descricao" id="Descricao">
+                    </div>
+                    <div>
+                        <label>Professor:</label>
+                        <input type="text" name="Professor" id="Professor">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="Submit" value="Submit">
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>IDCurso</th>
+                            <th>Curso</th>
+                            <th>Descricao</th>
+                            <th>Professor</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
